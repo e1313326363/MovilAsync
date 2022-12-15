@@ -121,9 +121,9 @@ class _ButtonsAsincronosState extends State<ButtonsAsincronos> {
                 onPressed: () async {
                   setState(() {
                     l_bar_with = 300;
-                    l_time = 1;
+                    l_time = 3;
                   });
-                  l = await MockApi().getFerrariInteger();
+                  l = await MockApi().getHyundaiInteger();
                   setState(() {
                     l_text = l;
                     l_time = 0;
@@ -163,9 +163,9 @@ class _ButtonsAsincronosState extends State<ButtonsAsincronos> {
                 onPressed: () async {
                   setState(() {
                     v_bar_with = 300;
-                    v_time = 1;
+                    v_time = 10;
                   });
-                  v = await MockApi().getFerrariInteger();
+                  v = await MockApi().getFisherPriceInteger();
                   setState(() {
                     v_text = v;
                     v_time = 0;
